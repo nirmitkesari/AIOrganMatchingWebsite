@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0e0e0e;
+    color: #ffffff;
+  }
+  
+  /* ===== NAVBAR ===== */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #121212;
+    border-bottom: 1px solid #2c2c2c;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .logo img {
+    height: 40px;
+    width: 40px;
+  }
+  
+  .logo span {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ff3b3b;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 25px;
+  }
+  
+  .nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    transition: 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    background-color: #ff3b3b;
+    color: #fff;
+  }
+  
+  /* ===== CONTAINER ===== */
+  .container {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 30px;
+    background-color: #1a1a1a;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255, 59, 59, 0.2);
+  }
+  
+  .container h1 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #ff3b3b;
+  }
+  
+  /* ===== TABLE STYLES ===== */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    color: #fff;
+  }
+  
+  thead {
+    background-color: #ff3b3b;
+    color: #fff;
+  }
+  
+  thead th {
+    padding: 14px;
+    font-size: 16px;
+    text-align: left;
+  }
+  
+  tbody td {
+    padding: 14px;
+    border-bottom: 1px solid #333;
+    font-size: 15px;
+  }
+  
+  tbody tr:hover {
+    background-color: #2a2a2a;
+  }
+  
+  /* ===== RESPONSIVE ===== */
+  @media screen and (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      gap: 15px;
+      padding: 20px;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .container {
+      margin: 30px 15px;
+      padding: 20px;
+    }
+  
+    table, thead, tbody, th, td, tr {
+      display: block;
+    }
+  
+    thead {
+      display: none;
+    }
+  
+    tbody td {
+      padding: 10px;
+      border-bottom: none;
+      position: relative;
+      padding-left: 50%;
+    }
+  
+    tbody td::before {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      font-weight: bold;
+      color: #aaa;
+      content: attr(data-label);
+    }
+  
+    tbody tr {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #333;
+    }
+  }
+
+  .footer {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 40px 20px;
+    margin-top: 60px;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .footer-container {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .footer-logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ff4c4c;
+    margin-bottom: 15px;
+  }
+  
+  .footer-links {
+    margin: 15px 0;
+  }
+  
+  .footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+  
+  .footer-links a:hover {
+    color: #ffffff;
+  }
+  
+  .footer-socials {
+    margin: 15px 0;
+  }
+  
+  .footer-socials a {
+    color: #aaa;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+  
+  .footer-socials a:hover {
+    color: #ff4c4c;
+  }
+  
+  .footer-copy {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #888;
+  }
+  
+  

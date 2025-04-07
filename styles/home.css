@@ -1,0 +1,287 @@
+/* Import fonts */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0d0d0d;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden; /* ✅ Fixed this line */
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+.sidebar {
+  width: 100px;
+  background-color: #111;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 10px;
+  justify-content: space-between;
+}
+
+.year {
+  color: #888;
+  font-size: 0.9rem;
+  transform: rotate(-90deg);
+  margin-bottom: 20px;
+}
+
+.nav-icons .icon {
+  font-size: 1.5rem;
+  margin: 25px 0;
+  cursor: pointer;
+  color: #ccc;
+  transition: transform 0.3s ease;
+}
+
+.nav-icons .icon:hover {
+  transform: scale(1.3);
+  color: #fff;
+}
+
+.btn-outline {
+  border: 1px solid #fff;
+  background: transparent;
+  padding: 10px 14px;
+  font-size: 0.9rem;
+  color: #fff;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 40px;
+  transition: background 0.3s;
+}
+
+.btn-outline:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.main-content {
+  flex: 1;
+  padding: 80px;
+  position: relative;
+  z-index: 2;
+}
+
+.text-content h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.text-content .highlight {
+  color: #ff4444;
+}
+
+.text-content p {
+  font-size: 1.2rem;
+  color: #aaa;
+  margin-bottom: 40px;
+  max-width: 600px;
+}
+
+.main-buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn-main {
+  background-color: #ff4444;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 35px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.btn-main:hover {
+  background-color: #e03030;
+  transform: scale(1.05);
+}
+
+/* Background Organic Structure */
+.bg-organ {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 80%;
+  background: url('../assets/detailed-d-render-human-heart-anatomy-against-black-background-medical-illustration-cardiovascular-system-s-showcasing-352198415.webp') no-repeat center center;
+  background-size: 110% 78%;
+  opacity: 0.2;
+  z-index: 1;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: rgba(0, 0, 0, 0.85);
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo img {
+  height: 40px;
+  width: 40px;
+  object-fit: contain;
+  border-radius: 50%;
+  border: 2px solid #ff3b3b;
+}
+
+.logo span {
+  font-size: 22px;
+  color: #ff3b3b;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  margin-left: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.3s ease;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #ff3b3b;
+  left: 0;
+  bottom: -4px;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.nav-links a:hover {
+  color: #ff3b3b;
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 40px 20px;
+  margin-top: 60px;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.footer-logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ff4c4c;
+  margin-bottom: 15px;
+}
+
+.footer-links {
+  margin: 15px 0;
+}
+
+.footer-links a {
+  color: #ccc;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+}
+
+.footer-socials {
+  margin: 15px 0;
+}
+
+.footer-socials a {
+  color: #aaa;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.footer-socials a:hover {
+  color: #ff4c4c;
+}
+
+.footer-copy {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/* Quotes Block Styling */
+.quote-block {
+  background-color: #1a1a1a;
+  border-left: 4px solid #ff4444;
+  padding: 25px 30px;
+  margin: 30px 0;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255, 68, 68, 0.15);
+  position: relative;
+  max-width: 700px;
+}
+
+.quote-block::before {
+  content: "❝";
+  font-size: 3rem;
+  color: #ff4444;
+  position: absolute;
+  top: -15px;
+  left: 15px;
+  opacity: 0.8;
+}
+
+.quote-block p {
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #ccc;
+  line-height: 1.6;
+  margin: 0;
+  padding-left: 30px;
+  position: relative;
+}
+
+/* Centering Quotes Container */
+.quote-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
