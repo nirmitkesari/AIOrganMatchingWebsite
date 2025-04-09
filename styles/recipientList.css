@@ -24,15 +24,13 @@ body {
   }
   
   .logo img {
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    border: 2px solid #ff4c4c;
+    height: 70px;
+    width: 70px;
   }
   
   .logo span {
     font-size: 22px;
-    color: #ff4c4c;
+    color: #beb7b7;
     font-weight: bold;
   }
   

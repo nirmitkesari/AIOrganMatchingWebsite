@@ -25,18 +25,14 @@ body {
 }
 
 .logo img {
-  height: 40px;
-  width: 40px;
-  object-fit: contain;
-  border-radius: 50%;
-  border: 2px solid #ff3b3b;
+  height: 70px;
+  width: 70px;
 }
 
 .logo span {
   font-size: 22px;
-  color: #ff3b3b;
+  color: #beb7b7;
   font-weight: bold;
-  letter-spacing: 1px;
 }
 
 .navbar {
@@ -58,15 +54,13 @@ body {
 }
 
 .logo img {
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-  border: 2px solid #ff4c4c;
+  height: 70px;
+  width: 70px;
 }
 
 .logo span {
   font-size: 22px;
-  color: #ff4c4c;
+  color: #beb7b7;
   font-weight: bold;
 }
 
@@ -103,7 +97,7 @@ body {
   background-color: #1a1a1a;
   padding: 40px;
   border-radius: 20px;
-  box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+  box-shadow: 0 0 15px rgba(255, 59, 59, 0.2);
 }
 
 .donor-form-container h2 {

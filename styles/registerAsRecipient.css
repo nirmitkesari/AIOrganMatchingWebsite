@@ -10,38 +10,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 60px;
-  background-color: rgba(0, 0, 0, 0.85);
-  box-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
-  position: sticky;
-  top: 0;
-  z-index: 999;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.logo img {
-  height: 40px;
-  width: 40px;
-  object-fit: contain;
-  border-radius: 50%;
-  border: 2px solid #ff3b3b;
-}
-
-.logo span {
-  font-size: 22px;
-  color: #ff3b3b;
-  font-weight: bold;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   background-color: rgba(0, 0, 0, 0.85);
   padding: 20px 60px;
   box-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
@@ -57,15 +25,13 @@ body {
 }
 
 .logo img {
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-  border: 2px solid #ff4c4c;
+  height: 70px;
+  width: 70px;
 }
 
 .logo span {
   font-size: 22px;
-  color: #ff4c4c;
+  color: #beb7b7;
   font-weight: bold;
 }
 
