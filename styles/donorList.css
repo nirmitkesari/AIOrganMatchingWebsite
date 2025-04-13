@@ -49,5 +49,58 @@ body {
   tr:hover {
     background-color: #2a2a2a;
   }
+
+  @media screen and (max-width: 768px) {
+    .main-content {
+      padding: 30px 15px;
+    }
+  
+    .main-content h1 {
+      font-size: 2rem;
+    }
+  
+    table {
+      font-size: 0.9rem;
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+  
+    th, td {
+      padding: 12px;
+    }
+  
+    .navbar {
+      flex-direction: column;
+      gap: 10px;
+      padding: 15px 20px;
+    }
+  
+    .logo {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nav-links a {
+      margin: 5px 0;
+    }
+  
+    .footer-container {
+      text-align: center;
+      padding: 20px;
+    }
+  
+    .footer-socials {
+      flex-direction: column;
+      gap: 8px;
+      margin: 10px 0;
+    }
+  }
+  
   
   

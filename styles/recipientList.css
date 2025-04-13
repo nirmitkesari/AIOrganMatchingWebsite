@@ -46,3 +46,52 @@ body {
     background-color: #2a2a2a;
   }
   
+  @media screen and (max-width: 768px) {
+    .recipient-container {
+      padding: 30px 15px;
+    }
+  
+    .section-title {
+      font-size: 2rem;
+    }
+  
+    .recipient-table {
+      font-size: 0.9rem;
+      display: block;
+      overflow-x: auto;
+      border-radius: 0;
+    }
+  
+    .recipient-table thead {
+      display: none;
+    }
+  
+    .recipient-table tr {
+      display: block;
+      margin-bottom: 15px;
+      background-color: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 10px;
+      padding: 15px;
+    }
+  
+    .recipient-table td {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      border: none;
+      border-bottom: 1px solid #444;
+    }
+  
+    .recipient-table td::before {
+      content: attr(data-label);
+      font-weight: bold;
+      color: #ff4c4c;
+      flex: 1;
+    }
+  
+    .recipient-table td:last-child {
+      border-bottom: none;
+    }
+  }
+  

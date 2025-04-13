@@ -65,50 +65,76 @@
     background-color: #2a2a2a;
   }
   
-  /* ===== RESPONSIVE ===== */
   @media screen and (max-width: 768px) {
-    .navbar {
-      flex-direction: column;
-      gap: 15px;
-      padding: 20px;
-    }
-  
-    .nav-links {
-      flex-direction: column;
-      gap: 10px;
-    }
-  
     .container {
       margin: 30px 15px;
       padding: 20px;
+      overflow-x: auto;
     }
   
-    table, thead, tbody, th, td, tr {
+    .container h1 {
+      font-size: 2rem;
+      margin-bottom: 25px;
+    }
+  
+    table {
+      font-size: 0.95rem;
       display: block;
+      overflow-x: auto;
+      white-space: nowrap;
     }
   
-    thead {
-      display: none;
+    thead th,
+    tbody td {
+      padding: 12px;
+    }
+  
+    thead th {
+      font-size: 0.95rem;
     }
   
     tbody td {
-      padding: 10px;
-      border-bottom: none;
-      position: relative;
-      padding-left: 50%;
+      font-size: 0.9rem;
     }
   
-    tbody td::before {
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      font-weight: bold;
-      color: #aaa;
-      content: attr(data-label);
+    .nav-links {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      padding: 10px 0;
     }
   
-    tbody tr {
-      margin-bottom: 20px;
-      border-bottom: 1px solid #333;
+    .nav-links a {
+      font-size: 14px;
+      margin: 0 10px;
+    }
+  
+    .logo img {
+      height: 35px;
+      width: 35px;
+    }
+  
+    .logo span {
+      font-size: 20px;
     }
   }
+  
+  @media screen and (max-width: 480px) {
+    .container {
+      padding: 15px;
+      margin: 20px 10px;
+    }
+  
+    .container h1 {
+      font-size: 1.8rem;
+    }
+  
+    table {
+      font-size: 0.85rem;
+    }
+  
+    .nav-links a {
+      font-size: 13px;
+    }
+  }
+  
